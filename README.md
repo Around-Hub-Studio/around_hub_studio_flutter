@@ -3,8 +3,9 @@
 
 ## Around Hub Studio 'Flutter'
 
-<p><a href="https://www.youtube.com/channel/UCO7p2fGIfwVbvk_d6sdfnDw"><strong>유튜브(YouTube)</strong></a>에서 스프링 부트 강의를 진행하면서 사용한 예제 코드를 공유하고 있습니다.</p>
+<p><a href="https://www.youtube.com/channel/UCO7p2fGIfwVbvk_d6sdfnDw"><strong>유튜브(YouTube)</strong></a>에서 프로그래밍 강의를 진행하면서 사용한 예제 코드를 공유하고 있습니다.</p>
 <p>핵심 코드만 공유하는 것이 아니라 '실행 가능한' 형태로 공유하고 있어 그대로 사용하실 수 있습니다.</p>
+<p>다만 환경 설정은 영상을 통해 함께 설정해야 실행할 수 있습니다.</p>
 <p>도움이 되셨으면 좋겠습니다 :)</p>
 
 <br>
