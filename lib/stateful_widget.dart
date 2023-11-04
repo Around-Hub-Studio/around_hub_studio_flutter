@@ -21,10 +21,6 @@ class _MyState extends State<MyStatefulWidgetApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
-        theme: ThemeData(
-          primarySwatch: Colors.amber,
-        ),
-        darkTheme: ThemeData.light(),
         home: Scaffold(
           body: Column(
             mainAxisAlignment: MainAxisAlignment.center,
