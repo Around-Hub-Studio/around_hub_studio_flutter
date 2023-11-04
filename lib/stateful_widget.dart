@@ -11,6 +11,13 @@ class _MyState extends State<MyStatefulWidgetApp> {
   var switchValue = false;
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    print("didChangeDependencies 호출");
+    print(super.mounted);
+  }
+
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
@@ -19,14 +26,29 @@ class _MyState extends State<MyStatefulWidgetApp> {
         ),
         darkTheme: ThemeData.light(),
         home: Scaffold(
-          body: Center(
-            child: Switch(
-                value: switchValue,
-                onChanged: (value) {
-                  setState(() {
-                    switchValue = value;
-                  });
-                }),
+          body: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Switch(
+                  value: switchValue,
+                  onChanged: (value) {
+                    setState(() {
+                      switchValue = value;
+                    });
+                  }),
+              Visibility(
+                visible: switchValue,
+                child: const Text(
+                  "까꿍",
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 80,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ),
+            ],
           ),
         ));
   }
